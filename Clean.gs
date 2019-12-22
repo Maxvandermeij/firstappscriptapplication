@@ -17,6 +17,7 @@ function cleanSheets() {
    
   var sheetnul = ss.getSheets()[0];
   sheetnul.clearFormats().clearContents().clearConditionalFormatRules();
+  sheetnul.protect().remove();
   sheetnul.deleteColumns(1, 5);
   sheetnul.insertColumns(1, 5);
   } 

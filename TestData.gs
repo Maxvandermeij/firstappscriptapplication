@@ -3,7 +3,7 @@ function setTestData() {
   
   for (i = 0; i < 5; i++) {  
   
-    sheets[0].getRange(150+i,1).setValue("Job " + i);
+    sheets[0].getRange(150+i,2).setValue("Job " + i);
   }
       
 }
