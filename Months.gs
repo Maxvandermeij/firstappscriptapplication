@@ -48,8 +48,7 @@ function calculateFirstMonthDays(y, m) {
         firstdayofcalendarmonth = firstdayofmonth.addDays(1);
         break;
     }
-  } 
-  
+  }
   return firstdayofcalendarmonth;  
 }
 
