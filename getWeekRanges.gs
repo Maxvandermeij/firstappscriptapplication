@@ -20,14 +20,13 @@ function getWeekRangesHours(y) {
   return weekrangeshours;
 }
 
-//notused
-function getWeekRangesJobs(y) {
+function getWeekRangesKms(y) {
   
   var year = y;
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets();
   var daysinmonth = getNumberofDaysperMonth(year);
     
-  var weekrangesjobs = new Array();
+  var weekrangeskms = new Array();
   var weeknumber = 0;
   
   for (i = 0; i < 12; i++) {      
@@ -36,9 +35,9 @@ function getWeekRangesJobs(y) {
       
        weeknumber = weeknumber + 1
        
-       weekrangesjobs[weeknumber] = sheet[i].getRange(2+d*3,4,21).getA1Notation();
+       weekrangeskms[weeknumber] = sheet[i].getRange(2+d*3,5,21).getA1Notation();
       }
   }
   
-  return weekrangesjobs;
+  return weekrangeskms;
 }
